@@ -5,8 +5,8 @@
 
 $:.unshift(File.dirname(__FILE__))
 
-require 'dictionary'
-require 'version.rb'
+require 'tfidf_ja/dictionary'
+require 'tfidf_ja/version'
 
 module TfIdf
   #

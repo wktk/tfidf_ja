@@ -22,15 +22,6 @@ Jeweler::Tasks.new do |gem|
   }
   gem.email = "24signals@gmail.com"
   gem.authors = ["K.Nishi"]
-  
-  # include files
-  gem.files = Rake::FileList.new('lib/**/*.rb', '[A-Z]*', 'dic/**/idf.dic')
-  
-  # required gems version
-  gem.required_rubygems_version = ">1.3.6"
-  
-  # for RDoc encoding
-  gem.rdoc_options << '-c UTF-8' << '-S' << '-U'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
