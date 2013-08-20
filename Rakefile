@@ -22,13 +22,6 @@ Jeweler::Tasks.new do |gem|
   }
   gem.email = "24signals@gmail.com"
   gem.authors = ["K.Nishi"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
-  
-  # gems dependency
-# gem.add_runtime_dependency 'igo-ruby', '> 0.1'
   
   # include files
   gem.files = Rake::FileList.new('lib/**/*.rb', '[A-Z]*', 'dic/**/idf.dic')
