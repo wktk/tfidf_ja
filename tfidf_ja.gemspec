@@ -4,67 +4,59 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{tfidf_ja}
+  s.name = "tfidf_ja"
   s.version = "0.2.1"
 
-  s.required_rubygems_version = Gem::Requirement.new("> 1.3.6") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["K.Nishi"]
-  s.date = %q{2011-06-22}
-  s.description = %q{
-    tfidf_ja computes TF-IDF with a dictionary.
-    This gem include a Japanese IDF dictionary that were prepared in Yahoo! API.
-  }
-  s.email = %q{24signals@gmail.com}
+  s.date = "2013-08-20"
+  s.description = "\n    tfidf_ja computes TF-IDF with a dictionary.\n    This gem include a Japanese IDF dictionary that were prepared in Yahoo! API.\n  "
+  s.email = "24signals@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
   ]
   s.files = [
+    ".document",
+    ".rspec",
     "Gemfile",
-    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "dic/1.8/idf.dic",
-    "dic/1.9/idf.dic",
-    "lib/dictionary.rb",
+    "dic/idf.dic",
     "lib/tfidf_ja.rb",
-    "lib/utility.rb",
-    "lib/version.rb"
-  ]
-  s.homepage = %q{http://github.com/kyow/tfidf_ja}
-  s.licenses = ["MIT"]
-  s.rdoc_options = ["-c UTF-8", "-S", "-U"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.0}
-  s.summary = %q{Computes TF-IDF with Japanese dictionary.}
-  s.test_files = [
+    "lib/tfidf_ja/dictionary.rb",
+    "lib/tfidf_ja/utility.rb",
+    "lib/tfidf_ja/version.rb",
     "spec/spec_helper.rb",
     "spec/tfidf_ja_spec.rb",
     "test/create_idf_dic.rb",
-    "test/test.rb"
+    "test/test.rb",
+    "tfidf_ja.gemspec"
   ]
+  s.homepage = "http://github.com/kyow/tfidf_ja"
+  s.licenses = ["MIT"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = "2.0.3"
+  s.summary = "Computes TF-IDF with Japanese dictionary."
 
   if s.respond_to? :specification_version then
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, ["~> 2.1.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.1"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
+      s.add_development_dependency(%q<rake>, [">= 0"])
+      s.add_development_dependency(%q<rdoc>, [">= 0"])
     else
-      s.add_dependency(%q<rspec>, ["~> 2.1.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
-      s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<jeweler>, [">= 0"])
+      s.add_dependency(%q<rake>, [">= 0"])
+      s.add_dependency(%q<rdoc>, [">= 0"])
     end
   else
-    s.add_dependency(%q<rspec>, ["~> 2.1.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
-    s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<jeweler>, [">= 0"])
+    s.add_dependency(%q<rake>, [">= 0"])
+    s.add_dependency(%q<rdoc>, [">= 0"])
   end
 end
 
