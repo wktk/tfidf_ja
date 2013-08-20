@@ -51,7 +51,7 @@ module TfIdf
     
     #辞書ファイルを読み込む
     def load_dic
-      idf_dic = File.dirname(__FILE__) + "/../dic/#{Version.ruby}/idf.dic"
+      idf_dic = File.dirname(__FILE__) + "/../dic/1.9/idf.dic"
       File.open(idf_dic) { |f|
         return Marshal.load(f)
       }
