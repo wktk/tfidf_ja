@@ -9,7 +9,9 @@ doc
 .yardoc
 
 # bundler
+Gemfile.lock
 .bundle
+vendor/bundle
 
 # jeweler generated
 pkg
